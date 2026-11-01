@@ -8,7 +8,9 @@
     "deploy": "wrangler deploy",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "smoke": "node scripts/smoke.mjs"
+    "smoke": "node scripts/smoke.mjs",
+    "build:stdio": "esbuild src/stdio.ts --bundle --platform=node --format=esm --target=node20 --outfile=dist/stdio.mjs",
+    "start:stdio": "node dist/stdio.mjs"
   },
   "type": "module",
   "dependencies": {

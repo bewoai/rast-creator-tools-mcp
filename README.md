@@ -55,6 +55,13 @@ Health: <https://rast-creator-tools-mcp.studio-c25.workers.dev/health> · Privac
 }
 ```
 
+**Run locally over stdio** (no network needed):
+
+```bash
+npm install && npm run build:stdio
+node dist/stdio.mjs        # or: docker build -t rast-creator-tools . && docker run -i --rm rast-creator-tools
+```
+
 ## Example prompts
 
 - What is the safe zone for a 1080x1920 TikTok video?
