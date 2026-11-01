@@ -2,6 +2,10 @@
 
 Stateless remote **MCP server** (Streamable HTTP, TypeScript, Cloudflare Workers) that exposes the free English creator tools of [rastcreative.com/en/tools/](https://rastcreative.com/en/tools/) to AI assistants — built for Google's **Connected Apps Platform** (Gemini app, AI Mode) and testable in **Gemini Apps Developer Mode**.
 
+**Live:** `https://rast-creator-tools-mcp.studio-c25.workers.dev/v1/mcp` (health: `https://rast-creator-tools-mcp.studio-c25.workers.dev/health`)
+· Privacy policy: https://rastcreative.com/en/tools/creator-tools-mcp-privacy/
+· Terms of service: https://rastcreative.com/en/tools/creator-tools-mcp-terms/
+
 - Deterministic, no auth, no user data stored, no logging, no outbound requests.
 - Every result carries a `source` link to the matching rastcreative.com tool page.
 - All tools are annotated `readOnlyHint: true`, `destructiveHint: false`, `idempotentHint: true`, `openWorldHint: false`.
@@ -86,10 +90,10 @@ Prerequisites (Bewo, own Google login): apply for the preview via the interest f
      - @Rast Creator Tools how big will a 3 minute 4K 30 fps YouTube export be?
      - Is a caption box at y 1550 px covered on Reels? Check it with Rast Creator Tools
      - @Rast Creator Tools check this SRT for timing and encoding errors
-   - Terms of Service URL: publish `TERMS.md` → `https://rastcreative.com/en/tools/creator-tools-mcp-terms/`
-   - Privacy Policy URL: publish `PRIVACY.md` → `https://rastcreative.com/en/tools/creator-tools-mcp-privacy/`
+   - Terms of Service URL: `https://rastcreative.com/en/tools/creator-tools-mcp-terms/` (live)
+   - Privacy Policy URL: `https://rastcreative.com/en/tools/creator-tools-mcp-privacy/` (live)
    - Website: `https://rastcreative.com/en/tools/`
-5. **MCP endpoint**: `https://<host>/v1/mcp` → **Download token** → put the file's JSON in `wrangler.jsonc` `vars.GOOGLE_CONNECTED_APPS_TOKEN` → `wrangler deploy` → `curl -i https://<host>/.well-known/google-connected-apps` (200, no redirect) → **Verify domain**.
+5. **MCP endpoint**: `https://rast-creator-tools-mcp.studio-c25.workers.dev/v1/mcp` → **Download token** → put the file's JSON in `wrangler.jsonc` `vars.GOOGLE_CONNECTED_APPS_TOKEN` → `wrangler deploy` → `curl -i https://<host>/.well-known/google-connected-apps` (200, no redirect) → **Verify domain**.
 6. **Access credentials**: "Does your server require authorization?" → **No**.
 7. **Sync tools** → expect 5. Availability: languages English; countries as wanted; products Gemini app (+ AI Mode if offered).
 8. Per tool: enable all; Additional context **none** (no locale/location needed); User confirmation **off** (all read-only).
@@ -108,5 +112,5 @@ src/data/               safe-zones.json, export-specs.ts (copied from the site r
 test/                   vitest (tools.test.ts, http.test.ts)
 scripts/smoke.mjs       live HTTP smoke test
 assets/icon-512.png     Connected Console icon
-PRIVACY.md, TERMS.md    drafts for the rastcreative.com pages
+PRIVACY.md, TERMS.md    source text of the live rastcreative.com policy pages
 ```

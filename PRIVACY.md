@@ -1,6 +1,6 @@
-# Rast Creator Tools — Privacy Policy (draft)
+# Rast Creator Tools — Privacy Policy
 
-> Proposed text for **https://rastcreative.com/en/tools/creator-tools-mcp-privacy/** (new page in the site repo, same pattern as `/en/tools/safe-zone-overlay-privacy/`). Not live yet — Bewo/Hermes publishes it before registering in Google Connected Console.
+> Published at **https://rastcreative.com/en/tools/creator-tools-mcp-privacy/** (site repo `src/pages/en/tools/`). Keep both in sync. Endpoint: `https://rast-creator-tools-mcp.studio-c25.workers.dev/v1/mcp`.
 
 **Rast Creator Tools** (the "app") is a free remote MCP server by Rast Creative Studio (rastcreative.com) that answers video-production questions inside AI assistants such as Gemini. Last updated: 1 November 2026.
 

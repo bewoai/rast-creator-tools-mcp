@@ -1,6 +1,6 @@
-# Rast Creator Tools — Terms of Service (draft)
+# Rast Creator Tools — Terms of Service
 
-> Proposed text for **https://rastcreative.com/en/tools/creator-tools-mcp-terms/** (or a "Terms" section on the privacy page). Not live yet.
+> Published at **https://rastcreative.com/en/tools/creator-tools-mcp-terms/** (site repo `src/pages/en/tools/`). Keep both in sync. Endpoint: `https://rast-creator-tools-mcp.studio-c25.workers.dev/v1/mcp`.
 
 Last updated: 1 November 2026.
 
