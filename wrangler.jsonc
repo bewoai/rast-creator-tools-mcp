@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "rast-creator-tools-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "observability": { "enabled": false },
+  // "vars": { "GOOGLE_CONNECTED_APPS_TOKEN": "<paste the public JSON challenge from Google Connected Console>" }
+}

@@ -1,0 +1,69 @@
+{
+  "_note": "Approximate UI zones on a 1080x1920 (9:16) frame, rounded to 10 px. Shared by /araclar/guvenli-alan/ and scripts/generate-safe-zone-templates.py. Sources and dates are listed on the page (Kaynaklar ve notlar). Re-check when the apps change their UI.",
+  "width": 1080,
+  "height": 1920,
+  "checked": "2026-10-30",
+  "platforms": [
+    {
+      "id": "instagram-reels",
+      "label": "Instagram Reels",
+      "short": "Reels",
+      "top": 220,
+      "bottom": 420,
+      "left": 60,
+      "right": 150,
+      "rail": { "x": 930, "y1": 900, "y2": 1500 },
+      "ui": "reels",
+      "note": "Üstte sekme/kamera çubuğu; altta kullanıcı adı, açıklama ve ses satırı; sağda beğeni, yorum, paylaş, kaydet sütunu."
+    },
+    {
+      "id": "tiktok",
+      "label": "TikTok",
+      "short": "TikTok",
+      "top": 220,
+      "bottom": 480,
+      "left": 60,
+      "right": 140,
+      "rail": { "x": 940, "y1": 820, "y2": 1620 },
+      "ui": "tiktok",
+      "note": "Üstte Takip/Senin İçin sekmeleri; altta kullanıcı adı, açıklama ve ses; sağda profil, beğeni, yorum, kaydet, paylaş ve ses diski."
+    },
+    {
+      "id": "youtube-shorts",
+      "label": "YouTube Shorts",
+      "short": "Shorts",
+      "top": 290,
+      "bottom": 670,
+      "left": 50,
+      "right": 190,
+      "rail": { "x": 890, "y1": 880, "y2": 1700 },
+      "ui": "shorts",
+      "note": "Üstte arama ve menü; altta kanal adı, abone ol, başlık ve ses; sağda beğeni, beğenmeme, yorum, paylaş ve remix. Değerler Google'ın dikey video reklamları için yayımladığı ölçüye (288/672/48/192 px) yuvarlanmıştır."
+    },
+    {
+      "id": "instagram-story",
+      "label": "Instagram Story",
+      "short": "Story",
+      "top": 250,
+      "bottom": 340,
+      "left": 60,
+      "right": 60,
+      "rail": null,
+      "ui": "story",
+      "note": "Üstte ilerleme çubuğu ve profil satırı; altta mesaj gönder alanı ve tepkiler. Sağ sütun yok."
+    }
+  ],
+  "combined": {
+    "id": "tum-platformlar",
+    "label": "Tüm platformlar (ortak güvenli alan)",
+    "short": "Hepsi"
+  },
+  "metaAds": { "label": "Meta Reels / Story reklamları (resmî)", "top": 270, "bottom": 670, "left": 65, "right": 65 },
+  "sticker": {
+    "label": "Reels yorum yanıtı etiketi",
+    "x1": 140,
+    "x2": 940,
+    "y1": 300,
+    "y2": 560
+  }
+}
