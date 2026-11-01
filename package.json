@@ -26,5 +26,10 @@
     "workerd@1.20261023.1": true
   },
   "private": true,
-  "license": "UNLICENSED"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bewoai/rast-creator-tools-mcp"
+  },
+  "homepage": "https://rastcreative.com/en/tools/"
 }
